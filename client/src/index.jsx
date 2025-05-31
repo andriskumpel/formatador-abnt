@@ -76,7 +76,7 @@ export function App() {
 		formData.append('file', selectedFile);
 		try {
 			const xhr = new XMLHttpRequest();
-			xhr.open('POST', 'https://formatador-abnt-backend.onrender.com/api/upload', true);
+			xhr.open('POST', 'https://formatador-abnt.onrender.com/api/upload', true);
 			xhr.responseType = 'blob';
 			xhr.upload.onprogress = function (event) {
 				if (event.lengthComputable) {
